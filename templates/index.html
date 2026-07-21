@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Établissements de santé - Thiès</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header>
+    <h1>Cartographie des établissements de santé — Thiès</h1>
+    <p class="subtitle">Données OpenStreetMap · Démo géospatiale (QGIS → PostGIS → Flask → Leaflet)</p>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Filtrer par type</h2>
+      <select id="filtreType">
+        <option value="">Tous les types</option>
+      </select>
+
+      <h2>Statistiques</h2>
+      <ul id="statsList"></ul>
+    </aside>
+
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
