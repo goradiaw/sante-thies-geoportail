@@ -1,7 +1,7 @@
 # Cartographie des établissements de santé — Thiès
 
 Application web démontrant une chaîne complète géomatique + développement :
-QGIS (import) → PostgreSQL/PostGIS (stockage) → Flask (API) → Leaflet (carte interactive).
+QGIS (import) → PostgreSQL/PostGIS (stockage) → Flask (API) → Leaflet (carte interactive)
 
 ## Installation
 
